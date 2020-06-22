@@ -3,40 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Blood Bank</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
     crossorigin="anonymous">
 
-    <link rel="stylesheet" href="../Css/Home.css">
+    <link rel="stylesheet" href="../../Css/Home.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg"  id="nav">
+    <nav class="navbar navbar-expand-lg sticky-top"  id="nav">
       <a class="navbar-brand">Blood Bank</a> 
       <div class="collapse navbar-collapse pull-right" id="navbarTogglerDemo01">
         <ul class="nav navbar-nav mr-auto mt-2 mt-lg-0">
-          <li class="nav-item"><a href="#" class="nav-link"id="link">Home</a></li>
-          <li class="nav-item"><a href="Hospital.html" class="nav-link" id="link">Hospitals</a></li>
-          <li class="nav-item"><a href="BloodBank.html" class="nav-link" id="link">Blood Banks</a></li>
+          <li class="nav-item"><a href="BoodBank_home.html" class="nav-link" id="link">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link" id="link">Blood Banks</a></li>
+          <li class="nav-item"><a href="../EditHospital.html" class="nav-link" id="link">Edit</a></li>
         </ul> 
       </div>       
       <div>
         <nav class="navbar navbar-right">
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
-          </form>
           <ul>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-               <img src="../Images/user.jpg" width="30" height="30" style="border-radius: 15px;"
+               <img src="../../Images/user.jpg" width="30" height="30" style="border-radius: 15px;"
                 class="d-inline-block align-top" alt="">
                User
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Change Password</a>
+                <a class="dropdown-item" href="../changePassword.html">Change Password</a>
                 <a class="dropdown-item" href="#">Log Out</a>
               </div>
             </li>
@@ -45,7 +41,7 @@
     </div>
   </nav>
 
-    <div class="container-fluid">
+    <div class="container">
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -54,15 +50,15 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="https://www.2j-antennas.com/media/original/blood-donation.jpg" style="height: 500px;"
+            <img src="https://www.deccanherald.com/sites/dh/files/article_images/2020/05/19/file70kc18dlox411gg69752-1188005359-1560449918.jpg" style="height: 500px;"
             class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="https://i2-prod.manchestereveningnews.co.uk/incoming/article11158008.ece/ALTERNATES/s810/Blood-Donation.jpg" 
+            <img src="https://www.medgadget.com/wp-content/uploads/2019/09/Blood-Bank-Information-System-Market.jpg" 
             style="height: 500px;" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="https://cdn.arstechnica.net/wp-content/uploads/2013/05/donate_blood_rotator.jpg" 
+            <img src="https://cdn.dnaindia.com/sites/default/files/styles/full/public/2018/04/07/669268-blood-donation.jpg" 
             style="height: 500px;" class="d-block w-100" alt="...">
           </div>
         </div>
@@ -75,22 +71,50 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
-
       <br>
-      <br>
+      <h3 style="text-align: center;">Blood Banks</h3>
+      <hr>
 
-      <div class="card text-center">
-        <div class="card-header">
-          Featured
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">Special title treatment</h5>
-          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-        <div class="card-footer text-muted">
-          2 days ago
-        </div>
+      <div class="row">
+        <div class="col-md-6">
+          <a href="Register.html" style="color: rgb(237, 41, 57); border: 2px solid rgb(237, 41, 57) ;
+          border-radius: 7px;">Add Blood Bank</a>
+          
+      </div>
+      <div class="col-md-6" style="float: right;">
+        <form class="form-inline my-2 my-lg-0" style="margin-left: 150px;">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Search</button>
+        </form>
+
+      </div>
+
+      </div>
+      <br>
+      <div>
+          
+        <table class="table">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col"></th>
+                <th scope="col">Name</th>
+                <th scope="col">Location</th>
+                <th scope="col">Contact No</th>
+                <th scope="col">Email</th>
+                <th scope="col">Role</th>
+              </tr>
+            </thead>
+            <tbody id="table">
+              <tr>
+                <th scope="row"></th>
+                <td>xyz</td>
+                <td>bhopal</td>
+                <td>123456789</td>
+                <td>cdhj@gmail.com</td>
+                <td>role</td>
+              </tr>
+            </tbody>
+            </table> 
       </div>
     </div>
 

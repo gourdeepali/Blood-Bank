@@ -9,7 +9,7 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
     crossorigin="anonymous">
 
-    <link rel="stylesheet" href="../Css/Home.css">
+    <link rel="stylesheet" href="../../Css/Home.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg"  id="nav">
@@ -23,20 +23,17 @@
       </div>       
       <div>
         <nav class="navbar navbar-right">
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
-              </form>
+
           <ul>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-               <img src="../Images/user.jpg" width="30" height="30" style="border-radius: 15px;"
+               <img src="../../Images/user.jpg" width="30" height="30" style="border-radius: 15px;"
                 class="d-inline-block align-top" alt="">
                User
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Change Password</a>
+                <a class="dropdown-item" href="../changePassword.html">Change Password</a>
                 <a class="dropdown-item" href="#">Log Out</a>
               </div>
             </li>
@@ -79,9 +76,20 @@
       <h3 style="text-align: center;">Hospitals</h3>
       <hr>
 
-      <div>
-          <a href="Register.html" style="color: rgb(237, 41, 57); border: 2px solid rgb(237, 41, 57) ;">Add Hospital</a>
+      <div class="row">
+        <div class="col-md-6">
+          <a href="Register.html" style="color: rgb(237, 41, 57); border: 2px solid rgb(237, 41, 57) ;
+          border-radius: 7px;">Add Hospital</a>
           
+      </div>
+      <div class="col-md-6" style="float: right;">
+        <form class="form-inline my-2 my-lg-0" style="margin-left: 150px;">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Search</button>
+        </form>
+
+      </div>
+
       </div>
       <br>
       <div>

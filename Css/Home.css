@@ -40,6 +40,12 @@ a:hover{
     margin-left: 40px;
    
 }
+.formDiv{
+    text-align: right;
+    height: 100px;
+
+}
+
 /* .btn-outline-success{
      background-color: whitesmoke; 
     color: rgb(237, 41, 57);

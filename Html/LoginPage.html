@@ -33,7 +33,16 @@
                   <label for="exampleInputPassword1">Password</label>
                   <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
                 </div>
-                <button type="submit" class="btn btn-primary">Login</button>
+                <div class="form-group">
+                  <label for="type">I am </label>
+                  <select id="type" name="I am" class="drop-down" onChange="getCategory(this);">
+                    <option value="admin" class="dropdown-item">Admin</option>
+                    <option value="hospital" class="dropdown-item">Hospital</option>
+                    <option value="bloodBank" class="dropdown-item">Blood Bank</option>
+                    <option value="doner" class="dropdown-item">Doner</option>
+                  </select>
+                </div>
+                <button type="submit" class="btn btn-primary" onclick="onLogin()">Login</button>
                 <button  type="button" class="btn btn-primary"> Register </button>
               </form>
             </div>
